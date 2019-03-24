@@ -1,0 +1,91 @@
+  <html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>ROS costmap generator manual</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h1>What is this?</h1>
+    <hr>
+    <br>
+    <br>
+    <div><a>This is a utility, to create </a><a href="http://wiki.ros.org/costmap_2d" class="link">costmaps</a><a> for ROS (Robot operating system) with google maps.
+    <br>
+    <br>
+    <br>
+    Costmaps provide a way of defining where the robot should navigate in the form of an occupancy grid. The costmap uses sensor data and information from the static map, this tool is designed to create, to store and update information about obstacles in the world.</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>How to map</h1>
+    <hr>
+    <br>
+    <br>
+    <div>
+    <a>
+    1. To create a new waypoint, click onto the 'New Waypoint' button.
+    <br>
+    <br>
+    2. To create an new territory where the robot can go, click on to the 'New Territory' button.
+    <br>
+    <br>
+    3. You always need to have at least one waypoint on the map. (as you will notice by it's appearance, it is the starting position of the robot)
+    <br>
+    <br>
+    4. To remove a vertex or a waypoint, right click onto it.
+    <br>
+    <br>
+    5. To center the map to your location, press onto the "Set Center" button and enter your coordinates. Please format it like latitude,longitude or latitude longitude.
+  </a>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1>Saving</h1>
+  <hr>
+  <div>
+  <a>
+    <br>
+      1. Click onto the 'Save' button.
+      <br>
+      <br>
+      2. You will be prompted 3 times, and asked for your preferred filenames:
+      <div>
+        <br>
+        2:1. If you want to keep the default filenames, just click next.
+        <br>
+        <br>
+        2:2. Please note, though, that if you already have the files in your download directory, the files will be saved under different names.
+        <br>
+        <br>
+      </div>
+      3. Your files should be ready to go!
+  </a>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+<h1>Specs & Customization</h1>
+<hr>
+<br>
+<div>
+  <a>
+    1. The default resolution is 1px = 10 centimeters. To change, go into the script.js file and replace the 'scaleVal' variable with a value of your choice.
+    <div>
+      <br>
+      1:1. To lower the resolution, make the 'scaleVal' variable bigger. You can view the code for the resolution calculation on lines 75, 79 and 80.
+      <br>
+      <br>
+    </div>
+    2. You can find all of the <a href="https://github.com/Tobi15Online/ROS-costmap-generator" class="link">project files under GitHub</a>
+    </a>
+</div>
+
+
+  </body>
+</html>

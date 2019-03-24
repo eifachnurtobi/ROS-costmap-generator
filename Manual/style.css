@@ -1,0 +1,33 @@
+html, body {
+  margin-bottom:20px;
+  margin-left:50px;
+  margin-right:50px;
+  margin-top:20px;
+  padding:0px;
+  font-family: 'Muli', sans-serif;
+}
+
+h1 {
+  font-size: 50;
+}
+
+a, h2{
+  font-size:20;
+  font-weight:normal;
+}
+
+a:link, a:visited {
+  color:black;
+  text-decoration:underline;
+}
+
+
+ .link:hover {
+  color:black;
+  font-style:italic;
+  text-decoration:underline;
+}
+
+div {
+  margin-left:30px;
+}

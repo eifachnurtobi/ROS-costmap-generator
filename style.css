@@ -1,0 +1,53 @@
+#map {
+  height: 100%;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.gglBtn{
+  border:none;
+  cursor: pointer;
+  margin-top:10px;
+  z-index:2;
+  direction: ltr;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  color: rgb(86, 86, 86);
+  font-family: Roboto, Arial, sans-serif;
+  user-select: none;
+  font-size: 13px;
+  background-color: rgb(255, 255, 255);
+  padding: 11px;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  background-clip: padding-box;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  min-width: 40px; border-left: 20px;
+}
+
+.gglBtn:hover{
+color:rgb(0,0,0);
+background-color:rgb(235,235,235);
+}
+
+.gglBtn:focus {
+  outline:0;
+}
+
+#cnvs{
+  display:block;
+
+}
+
+#btnContainer {
+    margin-left: calc(50vw - 177.525px);
+}
+
+#manual {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}

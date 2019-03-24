@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>ROS costmap generator</title>
+    <link rel="stylesheet" href="style.css">
+  <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  </head>
+  <body>
+    <div id="btnContainer">
+    <form action="Manual/Manual.html">
+      <button class="gglBtn" id="manual" title="Go to the Manual" aria-label="Go to the Manual" aria-pressed="false" draggable="false" style="margin-left:0px; z-index:1;">Manual</button>
+    </form>
+    <button class="gglBtn" onclick="AddMarker()" style="margin-left:57px; z-index:2;" title="Create new Waypoint" aria-label="Create new Waypoint" aria-pressed="false" draggable="false" >New Waypoint</button>
+    <button class="gglBtn" onclick="NewPoly()" style="margin-left:147px; z-index:3;" title="Create new Territory" aria-label="Create new Territory" aria-pressed="false" draggable="false" >New Territory</button>
+    <button class="gglBtn" onclick="draw()" title="Save as costmap" aria-label="Save as costmap" aria-pressed="false" draggable="false" style="margin-left:232px; z-index:4;">Save</button>
+    <button class="gglBtn" onclick="SetCenter()" title="Set center of map" aria-label="Set center of map" aria-pressed="false" draggable="false" style="margin-left:276px; z-index:5;">Set Center</button>
+    </div>
+    <div id="map""></div>
+    <script src="script.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKCpN_JarQPOXX6Q-43e0JkPmJOySnrUo&callback=initMap&libraries=geometry">
+    </script>
+    <canvas id="cnvs" width="0" height="0">
+    </canvas>
+  </body>
+</html>
